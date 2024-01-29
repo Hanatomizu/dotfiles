@@ -1,0 +1,9 @@
+syntax on
+set nu
+set relativenumber
+set cindent
+set smartindent
+set autoindent
+set tabstop=4
+set nobackup
+set ruler
