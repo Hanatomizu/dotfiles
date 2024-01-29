@@ -1,0 +1,46 @@
+# colors
+darkgrey="$(tput bold ; tput setaf 0)"
+white="$(tput bold ; tput setaf 7)"
+blue="$(tput bold; tput setaf 4)"
+cyan="$(tput bold; tput setaf 6)"
+nc="$(tput sgr0)"
+
+# the prompt
+if [[ $EUID -eq 0 ]]; then
+  export PS1="\[$blue\][\[$cyan\]\H \[$darkgrey\]\w\[$darkgrey\]\[$blue\]]\\[$darkgrey\]\# \[$nc\]"
+else
+  export PS1="\[$blue\][\[$cyan\]\H \[$darkgrey\]\w\[$darkgrey\]\[$blue\]]\\[$cyan\]\$ \[$nc\]"
+fi
+export LD_PRELOAD=""
+export EDITOR="vim"
+
+# Aliases
+alias vi='vim'
+alias l='ls --color=auto'
+alias ls='ls --color=auto'
+alias ll='ls -l --color=auto'
+alias la='ls -al --color=auto'
+
+# cd autocorrect
+shopt -s cdspell
+
+# >>> conda initialize >>>
+# run conda_load() when conda is required
+# the content in the function were gengerated through "conda init"
+# please make sure that the path of conda is match that on your computer
+function conda_load(){
+function conda_load(){
+  __conda_setup="$('/opt/miniconda/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+  if [ $? -eq 0 ]; then
+      eval "$__conda_setup"
+  else
+      if [ -f "/opt/miniconda/etc/profile.d/conda.sh" ]; then
+          . "/opt/miniconda/etc/profile.d/conda.sh"
+      else
+          export PATH="/opt/miniconda/bin:$PATH"
+      fi
+  fi
+  unset __conda_setup
+}
+# <<< conda initialize <<<
+
