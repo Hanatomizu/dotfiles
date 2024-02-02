@@ -30,6 +30,10 @@ autoload -U colors && colors
 #%{$fg[cyan]%}%B\$%b%{$reset_color%} "
 #export RPROMPT="%F{red}%(?..%?)%f"
 setopt correct
+
+### Path configures
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+export MANPATH=/opt/local/share/man:$MANPATH
 ###>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 ###>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -59,10 +63,11 @@ zinit light-mode lucid for \
 ###>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 ### User Aliases
 alias vi='vim'
-alias l='ls --color=auto'
-alias ls='ls --color=auto'
-alias ll='ls --color=auto -lh'
-alias la='ls --color=auto -alh'
+alias l='ls -G'
+alias ls='ls -G'
+alias ll='ls -lhG'
+alias la='ls -alhG'
+alias rm='rm -i'
 ###>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 ###>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -130,24 +135,24 @@ zinit lucid wait'0' for \
 ###>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 ### Applications Configures
 export EDITOR='vim'
+
 ### Load the full version of powerlevel10k ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
 ### conda initialize
-### run conda_load() when conda is required
-### the content in the function were gengerated through "conda init"
-### please make sure that the path of conda is match that on your computer
-function conda_load(){
-	__conda_setup="$('/opt/miniconda/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-	if [ $? -eq 0 ]; then
-	    eval "$__conda_setup"
-	else
-	    if [ -f "/opt/miniconda/etc/profile.d/conda.sh" ]; then
-	        . "/opt/miniconda/etc/profile.d/conda.sh"
-	    else
-	        export PATH="/opt/miniconda/bin:$PATH"
-	    fi
-	fi
-	unset __conda_setup
-	}
+__conda_setup="$('/usr/local/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/usr/local/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/usr/local/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/usr/local/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+
+### fnm init
+eval "$(fnm env --use-on-cd)"
 ###>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
