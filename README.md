@@ -2,9 +2,11 @@
 
 Hello there, there's hanatomizu's config files. Please enjoy
 
+# Anaconda
+Change your directions about anaconda using `conda init zsh`. And remember to remove the settings that exists.
+
 # About config.sh
-Of course you are able to apply my config easily by running `config.sh`.  
-But please make sure that your changes were saved because it may hurt your original configs.  
+The config.sh doesn't work on macOS so please link the files to the correct direction by your self :(
 
 # Specially thanks
 
