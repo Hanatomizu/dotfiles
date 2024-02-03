@@ -108,9 +108,9 @@
 	# Context format when root: user@host. The first part white, the rest grey.
 	typeset -g POWERLEVEL9K_CONTEXT_ROOT_TEMPLATE="%F{$white}%n%f%F{$grey}@%m%f"
 	# Context format when not root: user@host. The whole thing grey.
-	typeset -g POWERLEVEL9K_CONTEXT_TEMPLATE="%F{$blue}[%F{$cyan}%n@%m%F{$blue}]"
+	typeset -g POWERLEVEL9K_CONTEXT_TEMPLATE="%F{$blue}[%F{$magenta}%n%F{$blue}@%F{$cyan}%m%F{$blue}]"
 	# Don't show context unless root or in SSH.
-	typeset -g POWERLEVEL9K_CONTEXT_{DEFAULT,SUDO}_CONTENT_EXPANSION="%F{$blue}[%F{$cyan}%n@%m%F{$blue}]"
+	typeset -g POWERLEVEL9K_CONTEXT_{DEFAULT,SUDO}_CONTENT_EXPANSION="%F{$blue}[%F{$magenta}%n%F{$blue}@%F{$cyan}%m%F{$blue}]"
 
 	# Show previous command duration only if it's >= 5s.
 	typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD=5
