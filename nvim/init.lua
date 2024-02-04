@@ -22,3 +22,7 @@ require("plugins.lsp")
 require("plugins.cmp")
 -- buffer line
 require("plugins.bufferline")
+-- auto pair
+require("plugins.autopair")
+-- comments
+require("plugins.comments")

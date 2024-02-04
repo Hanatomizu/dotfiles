@@ -53,7 +53,11 @@ local plugins = {
 	'rafamadriz/friendly-snippets',
 	'hrsh7th/cmp-path',
 	-- buffer line
-	'akinsho/bufferline.nvim'
+	'akinsho/bufferline.nvim',
+	-- auto pair
+    'windwp/nvim-autopairs',
+    -- comment plugin
+    'numToStr/Comment.nvim'
 }
 
 local opts = {}
