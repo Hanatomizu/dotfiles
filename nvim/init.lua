@@ -16,3 +16,7 @@ require("plugins.lualine")
 require("plugins.nvim-tree")
 -- nvim tree-sitter
 require("plugins.treesitter")
+-- lsp
+require("plugins.lsp")
+-- auto completions
+require("plugins.cmp")

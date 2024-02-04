@@ -43,8 +43,17 @@ local plugins = {
     },
     -- lsp
 	'williamboman/mason.nvim',
-    'williamboman/lspconfig-nvim',
-    'neovim/nvim-lspconfig'
+    'williamboman/mason-lspconfig.nvim',
+    'neovim/nvim-lspconfig',
+	-- auto completion
+	'hrsh7th/nvim-cmp',
+	'hrsh7th/cmp-nvim-lsp',
+	'L3MON4D3/LuaSnip',
+	'saadparwaiz1/cmp_luasnip',
+	'rafamadriz/friendly-snippets',
+	'hrsh7th/cmp-path'
+	-- buffer line
+	'akinsho/bufferline.nvim'
 }
 
 local opts = {}
