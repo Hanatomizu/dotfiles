@@ -40,7 +40,11 @@ local plugins = {
     },
     {
         'p00f/nvim-ts-rainbow'
-    }
+    },
+    -- lsp
+	'williamboman/mason.nvim',
+    'williamboman/lspconfig-nvim',
+    'neovim/nvim-lspconfig'
 }
 
 local opts = {}
