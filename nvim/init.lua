@@ -14,3 +14,5 @@ require("plugins.colorscheme")
 require("plugins.lualine")
 -- nvim tree explorer
 require("plugins.nvim-tree")
+-- nvim tree-sitter
+require("plugins.treesitter")

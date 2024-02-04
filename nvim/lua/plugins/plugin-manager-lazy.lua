@@ -29,7 +29,18 @@ local plugins = {
 	{
 		'nvim-tree/nvim-tree.lua',
 		dependencies = {'nvim-tree/nvim-web-devicons'}
-	}
+	},
+    -- toggle window with ctl-hjkl --
+    {
+        'christoomey/vim-tmux-navigator'
+    },
+    -- syntax highlighting --
+    {
+        'nvim-treesitter/nvim-treesitter'
+    },
+    {
+        'p00f/nvim-ts-rainbow'
+    }
 }
 
 local opts = {}

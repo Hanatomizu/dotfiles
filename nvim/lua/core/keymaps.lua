@@ -16,8 +16,11 @@ km.set("v", "K", ":m '<-2<CR>gv=gv")
 km.set("n", "<leader>%", "<C-w>v") -- split left and right
 km.set("n", "<leader>\"", "<C-w>s") -- split top and bottom 
 
--- Cancel Highlighting --
+-- Cancel Highlighting while searching --
 km.set("n", "<leader>nh", ":nohl<CR>")
+
+-- Open Terminal --
+km.set("n", "<leader>t", ":terminal<CR>")
 
 -- --------Plugins-------- --
 -- nvim-tree --
