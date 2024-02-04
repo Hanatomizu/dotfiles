@@ -6,3 +6,11 @@ require("core.options")
 require("core.appearance")
 -- Keymaps --
 require("core.keymaps")
+
+-- --------Plugins Load-------- --
+-- colorscheme
+require("plugins.colorscheme")
+-- lualine
+require("plugins.lualine")
+-- nvim tree explorer
+require("plugins.nvim-tree")

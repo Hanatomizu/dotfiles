@@ -18,3 +18,7 @@ km.set("n", "<leader>\"", "<C-w>s") -- split top and bottom
 
 -- Cancel Highlighting --
 km.set("n", "<leader>nh", ":nohl<CR>")
+
+-- --------Plugins-------- --
+-- nvim-tree --
+km.set("n", "<leader>e", ":NvimTreeToggle<CR>")
