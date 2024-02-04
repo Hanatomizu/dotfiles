@@ -20,3 +20,5 @@ require("plugins.treesitter")
 require("plugins.lsp")
 -- auto completions
 require("plugins.cmp")
+-- buffer line
+require("plugins.bufferline")
