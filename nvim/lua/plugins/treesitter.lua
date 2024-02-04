@@ -3,7 +3,7 @@
 
 require'nvim-treesitter.configs'.setup {
     -- add language support
-    ensure_installed = {"vim", "help", "bash", "c", "cpp", "javascript", "json", "lua", "python", "java", "kotlin", "rust", "markdown", "html", "css", "diff", "gitignore", "latex"},
+    ensure_installed = {"vim", "bash", "c", "cpp", "javascript", "json", "lua", "python", "java", "kotlin", "rust", "markdown", "html", "css", "diff", "gitignore", "latex"},
 
     highlight = {enable = true},
     indent = {enable = true},
