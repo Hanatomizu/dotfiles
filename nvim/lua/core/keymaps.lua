@@ -25,3 +25,6 @@ km.set("n", "<leader>t", ":terminal<CR>")
 -- --------Plugins-------- --
 -- nvim-tree --
 km.set("n", "<leader>e", ":NvimTreeToggle<CR>")
+-- bufferline --
+km.set("n", "L", ":bnext<CR>")
+km.set("n", "H", ":bprevious<CR>")
