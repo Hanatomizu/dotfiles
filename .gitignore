@@ -8,3 +8,5 @@ foo.*
 data
 
 tmux/plugins/
+
+lazy-lock.json
