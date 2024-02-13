@@ -1,3 +1,4 @@
+" Basic settings
 syntax on
 set nu
 set relativenumber
@@ -7,3 +8,12 @@ set autoindent
 set tabstop=4
 set nobackup
 set ruler
+
+
+" Shortcuts
+let mapleader=" "
+
+inoremap jk <esc>
+
+nmap <Leader>t :terminal<CR>
+
