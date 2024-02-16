@@ -64,7 +64,7 @@ alias ls='ls --color=auto'
 alias ll='ls --color=auto -lh'
 alias la='ls --color=auto -alh'
 alias rm='rm -i'
-alias mv='rm -i'
+alias mv='mv -i'
 ###>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 ###>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
