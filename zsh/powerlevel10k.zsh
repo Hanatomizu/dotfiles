@@ -96,8 +96,11 @@
 	# Prompt symbol in overwrite vi mode is the same as in command mode.
 	typeset -g POWERLEVEL9K_PROMPT_CHAR_OVERWRITE_STATE=false
 
+    # Anaconda
+    typeset -g POWERLEVEL9K_ANACONDA_FOREGROUND=$magenta
+
 	# Grey Python Virtual Environment.
-	typeset -g POWERLEVEL9K_VIRTUALENV_FOREGROUND=$grey
+	typeset -g POWERLEVEL9K_VIRTUALENV_FOREGROUND=$magenta
 	# Don't show Python version.
 	typeset -g POWERLEVEL9K_VIRTUALENV_SHOW_PYTHON_VERSION=false
 	typeset -g POWERLEVEL9K_VIRTUALENV_{LEFT,RIGHT}_DELIMITER=
