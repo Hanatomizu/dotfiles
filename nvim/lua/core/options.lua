@@ -30,3 +30,4 @@ opt.splitbelow = true
 -- Searching --
 opt.ignorecase = true
 opt.smartcase = true
+
