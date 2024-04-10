@@ -2,6 +2,8 @@
 require("plugins.plugin-manager-lazy")
 -- Options --
 require("core.options")
+-- Fcitx5 Settings --
+require("core.fcitx5") 
 -- Appearances --
 require("core.appearance")
 -- Keymaps --
