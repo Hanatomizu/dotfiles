@@ -132,6 +132,7 @@ zinit lucid wait'0' for \
 ###>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 ### Applications Configures
 export EDITOR='vim'
+export SUDO_EDITOR='nvim'
 ### Load the full version of powerlevel10k ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 ###>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
