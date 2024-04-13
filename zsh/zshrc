@@ -135,9 +135,7 @@ zinit lucid wait'0' for \
 ###>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 ### Applications Configures
 export EDITOR='vim'
-
-### Load the full version of powerlevel10k ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+export SUDO_EDITOR='nvim'
 
 ### conda initialize
 __conda_setup="$('/usr/local/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -154,5 +152,8 @@ unset __conda_setup
 
 ### fnm init
 eval "$(fnm env --use-on-cd)"
+
+### Load the full version of powerlevel10k ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 ###>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
