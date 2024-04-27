@@ -139,7 +139,7 @@ fi
 unset __conda_setup
 
 ### fnm init
-eval "$(fnm env)"
+eval "$(fnm env --use-on-cd)"
 
 ###>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
